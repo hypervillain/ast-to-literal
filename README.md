@@ -32,4 +32,5 @@ Supported value types:
 - undefined (stripped from object too)
 
 It could support other value types as long as they don't need any sort of computation.
+
 Feel free to file an issue if you use this package and need more ou of it ✌️
