@@ -1,0 +1,20 @@
+{
+  "name": "ast-to-literal",
+  "version": "0.0.1",
+  "description": "Transform a Babel ObjectExpression into a JS object",
+  "main": "index.js",
+  "repository": "https://github.com/hypervillain/ast-to-literal",
+  "author": "Hugo Villain",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^25.4.0"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.9.4",
+    "deep-equal": "^2.0.3"
+  }
+}
