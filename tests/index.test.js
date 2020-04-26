@@ -8,7 +8,7 @@ const toJs = require('..')
 const sampleObject = require('./sample')
 const sampleCode = fs.readFileSync(path.join(__dirname, 'sample.js'), 'utf8')
 
-test('compared sobjects are deeply equal', () => {
+test('compared objects are deeply equal', () => {
   const ast = parser.parse(sampleCode)
   const object = ast.program.body[0].expression.right
   expect(equal(sampleObject, toJs(object))).toBe(true);
