@@ -1,7 +1,7 @@
 {
   "name": "ast-to-literal",
   "version": "0.0.1",
-  "description": "Transform a Babel ObjectExpression into a JS object",
+  "description": "Transform a Babel Expression into a JS value",
   "main": "index.js",
   "repository": "https://github.com/hypervillain/ast-to-literal",
   "author": "Hugo Villain",

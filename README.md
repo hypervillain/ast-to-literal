@@ -1,6 +1,6 @@
 # ast-to-literal
 
-Transform a Babel ObjectExpression into a JS object.
+Transform a Babel Expression into a JS object.
 
 ----
 
