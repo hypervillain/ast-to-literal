@@ -13,6 +13,5 @@ module.exports = {
   moduleFileExtensions: ['js'],
   notify: true,
   notifyMode: 'always',
-  // roots: ['<rootDir>'],
   testMatch: ['**/__tests__/*.+(ts|tsx|js)', '**/*.test.+(ts|tsx|js)'],
 };
