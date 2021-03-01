@@ -19,7 +19,7 @@ function toJs(node) {
 		return node.elements.map(toJs)
   }
   console.error(
-    `[ast-to-literal] Node of type "${type}" could not be computed.
+    `[ast-to-literal] Node of type "${node.type}" could not be computed.
 Adding the case may be possible: file an issue on Github! 👍\n`
   )
 }
