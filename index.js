@@ -16,8 +16,12 @@ function toJs(node) {
 	}
 
 	if (t.isArrayExpression(node)) {
-		return node.elements.flatMap(element =>
-      element.type === 'SpreadElement' ? toJs(element.argument) : [toJs(element)]
+		return node.elements.reduce((acc, element) =>
+      [
+        ...acc,
+        ...element.type === 'SpreadElement' ? toJs(element.argument) : [toJs(element)]
+      ],
+      [],
     )
   }
 }
