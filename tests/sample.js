@@ -1,8 +1,11 @@
 module.exports = {
+  ...{ spreaded: 'foo' },
+  ...{ spreadedFunc: () => {} },
   bool: true,
   str: "my-string",
   obj: {
     isObjectExpression: true,
   },
-  arr: [1, true, "str", { key: "value" }],
+  arr: [...['spreaded'], 1, true, "str", { key: "value" }],
+  func: () => {},
 };

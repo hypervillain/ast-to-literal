@@ -16,17 +16,26 @@ function toJs(node) {
 	}
 
 	if (t.isArrayExpression(node)) {
-		return node.elements.map(toJs)
+		return node.elements.flatMap(element =>
+      element.type === 'SpreadElement' ? toJs(element.argument) : [toJs(element)]
+    )
   }
 }
 
 function computeProps(props) {
   return props.reduce((acc, prop) => {
-    const val = toJs(prop.value)
-    if (val) {
+    if (prop.type === 'SpreadElement') {
       return {
         ...acc,
-        [prop.key.name]: val
+        ...toJs(prop.argument),
+      }
+    } else {
+      const val = toJs(prop.value)
+      if (val) {
+        return {
+          ...acc,
+          [prop.key.name]: val
+        }
       }
     }
     return acc
