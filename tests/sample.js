@@ -8,4 +8,5 @@ module.exports = {
   },
   arr: [...['spreaded'], 1, true, "str", { key: "value" }],
   func: () => {},
+  method() {},
 };

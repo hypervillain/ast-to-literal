@@ -33,7 +33,7 @@ function computeProps(props) {
         ...acc,
         ...toJs(prop.argument),
       }
-    } else {
+    } else if (prop.type !== 'ObjectMethod') {
       const val = toJs(prop.value)
       if (val) {
         return {
