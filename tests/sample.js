@@ -1,5 +1,6 @@
 module.exports = {
   bool: true,
+  false: false,
   str: "my-string",
   obj: {
     isObjectExpression: true,
