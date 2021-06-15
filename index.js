@@ -23,9 +23,11 @@ function toJs(node) {
 function computeProps(props) {
   return props.reduce((acc, prop) => {
     const val = toJs(prop.value)
-    return {
-      ...acc,
-      [prop.key.name]: val
+    if (val !== undefined) {
+      return {
+        ...acc,
+        [prop.key.name]: val
+      }
     }
     return acc
   }, {})
