@@ -7,7 +7,11 @@ function toJs(node) {
 		return node.value
 	}
 
-	if (t.isNullLiteral(node) || (node.name === 'undefined' && !node.value)) {
+  if (node.name === 'undefined' && !node.value) {
+    return undefined
+  }
+
+	if (t.isNullLiteral(node)) {
 		return null
 	}
 
