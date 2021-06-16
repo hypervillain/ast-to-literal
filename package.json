@@ -1,6 +1,6 @@
 {
   "name": "ast-to-literal",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Transform a Babel Expression into a JS value",
   "main": "index.js",
   "repository": "https://github.com/hypervillain/ast-to-literal",
