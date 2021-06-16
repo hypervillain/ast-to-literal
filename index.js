@@ -35,7 +35,7 @@ function computeProps(props) {
       }
     } else if (prop.type !== 'ObjectMethod') {
       const val = toJs(prop.value)
-      if (val) {
+      if (val !== undefined) {
         return {
           ...acc,
           [prop.key.name]: val
