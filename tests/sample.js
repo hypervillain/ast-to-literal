@@ -1,4 +1,6 @@
 module.exports = {
+  ...{ spreaded: 'foo' },
+  ...{ spreadedFunc: () => {} },
   bool: true,
   false: false,
   undefined: undefined,
@@ -8,5 +10,7 @@ module.exports = {
   obj: {
     isObjectExpression: true,
   },
-  arr: [1, true, "str", { key: "value" }],
+  arr: [...['spreaded'], 1, true, "str", { key: "value" }],
+  func: () => {},
+  method() {},
 };

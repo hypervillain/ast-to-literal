@@ -15,7 +15,6 @@
     "jest": "^25.4.0"
   },
   "devDependencies": {
-    "@babel/parser": "^7.9.4",
-    "deep-equal": "^2.0.3"
+    "@babel/parser": "^7.9.4"
   }
 }
